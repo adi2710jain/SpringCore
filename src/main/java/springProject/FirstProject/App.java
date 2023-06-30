@@ -16,5 +16,7 @@ public class App
 		ApplicationContext context=new ClassPathXmlApplicationContext("config.xml");
         Student std=(Student)context.getBean("student1");
         System.out.println(std.toString());
+        Engineering eng=(Engineering) context.getBean("engDepart");
+        System.out.println(eng.toString());
     }
 }
