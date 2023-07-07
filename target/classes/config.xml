@@ -18,7 +18,16 @@
         <value>Pune</value> 
         </property>
         </bean> -->
-        <bean class="springProject.FirstProject.Organization" name="bnyMellon" p:divName="Engineering" p:noofEmployees="120" />
-        <bean class="springProject.FirstProject.Engineering" name="engDepart" p:org-ref="bnyMellon" />
+       
+        <bean class="springProject.FirstProject.Engineering" name="engDepart" p:org-ref="bnyMellon">
+        <property name="li">
+        <list>
+        <value>12</value>
+        <value>13</value>
+        <value>14</value> 
+        </list>
+        </property>
+        </bean>
+         <bean class="springProject.FirstProject.Organization" name="bnyMellon" p:divName="Engineering" p:noofEmployees="120" />
         <bean class="springProject.FirstProject.Student" name="student1" p:studentId="22" p:studentName="ravi"  p:address="rampur"/>
         </beans>
