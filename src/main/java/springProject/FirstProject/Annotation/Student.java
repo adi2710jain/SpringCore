@@ -12,6 +12,8 @@ public class Student {
 	private String City;
 	@Autowired
 	private Address add;
+	@Value("#{True}")
+	private boolean isActive;
 	public String getName() {
 		return name;
 	}
@@ -26,8 +28,9 @@ public class Student {
 	}
 	@Override
 	public String toString() {
-		return "Student [name=" + name + ", City=" + City + ", add=" + add + "]";
+		return "Student [name=" + name + ", City=" + City + ", add=" + add + ", isActive=" + isActive + "]";
 	}
+	
 	
 
 }
